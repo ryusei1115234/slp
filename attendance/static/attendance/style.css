@@ -1,0 +1,175 @@
+body {
+    background: #fff;
+}
+  
+.login {
+    width: 400px;
+    margin:200px auto;
+    font-size: 16px;
+}
+.login-header,
+.login p {
+    margin-top: 0;
+    margin-bottom:0;
+}
+  
+.login-header {
+  background: #28d;
+  padding: 20px;
+  font-size: 1.4em;
+  font-weight: normal;
+  text-align: center;
+  color: #fff;
+}
+  
+.login-container {
+  background: #ebebeb;
+  padding: 12px;
+}
+  
+  
+.login p {
+  padding: 12px;
+}
+  
+.login input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em;
+}
+  
+.login input[type="text"],
+.login input[type="password"] {
+  background: #fff;
+  border-color: #bbb;
+  color: #555;
+}
+  
+  /* Text fields' focus effect */
+.login input[type="text"]:focus,
+.login input[type="password"]:focus {
+  border-color: #888;
+}
+  
+.login input[type="submit"] {
+  background: #28d;
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+  
+.login input[type="submit"]:hover {
+  background: #17c;
+}
+  
+  /* Buttons' focus effect */
+.login input[type="submit"]:focus {
+  border-color: #05a;
+}
+
+
+.create{
+    width:auto;
+    margin:auto;
+    padding:auto;
+    
+    
+}
+
+.create-header{
+  padding:0em 23%;
+  font-size: 6em;
+  font-weight: normal;
+}
+
+
+.create table{
+  width:auto;
+  height:auto;
+  margin:auto 330px;
+}
+
+
+.create tr{
+  width:auto;
+  height:auto;
+  
+}
+
+.create a{
+  text-decoration: none;
+  color: rgb(240, 242, 245);
+  font-size: 80px;
+  font-weight:300;
+  background-color: rgb(103, 168, 241);
+}
+
+
+
+
+
+.start_end {
+  width:auto;
+  height:auto;
+  font-size: 16px;
+}
+
+.start_end p {
+  margin-top: 150px;
+  margin-bottom:0;
+  margin-left: 400px;
+}
+
+.start_end input[type="submit"] {
+  background: #28d;
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  box-sizing: border-box;
+  font-size: 3em;
+  height:300px;
+  width:500px;
+
+}
+  
+.start_end a{
+  position:relative;	
+	bottom:-150px;
+	left:600px;
+}
+
+
+
+.record {
+  width:auto;
+  height:auto;
+  margin:200px auto;
+  font-size: 16px;
+}
+.record h1{
+  padding:0em 23%;
+  font-weight: normal;
+}
+
+
+.record a{
+
+  text-decoration: none;
+  color: rgb(240, 242, 245);
+  font-weight:300;
+  background-color: rgb(145, 10, 10);
+  font-size: 5em;
+  position:relative;	
+	bottom:-150px;
+	left:400px;
+
+}
+
+
+

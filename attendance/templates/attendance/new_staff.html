@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="ja">
+    
+
+<body> 
+    <form action="{% url 'new_staff' %}" method="post">
+        {% csrf_token %}
+        <p><input type="text" name="name"placeholder="名前を入力して下さい"></p>
+        <p><input type="text" name="transportation_expenses"placeholder="交通費を入力して下さい"></p>
+        <p><input type="text" name="hourly_wage"placeholder="時給を入力して下さい"></p>
+        <p><input type="submit" value="登録をする"></p>
+    </form>
+    <a href="{% url 'create' %}">[ 戻る ]</a>
+    <a href="/login/">[ ログアウト ]</a>
+            
+       
+</body>
+</html>

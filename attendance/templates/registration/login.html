@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+   <link rel="stylesheet"  href="{% static 'attendance/style.css' %}"/>
+</head>
+
+<body>
+   <div class="login">   
+      <h1 class="login-header">ログイン画面</h1>
+      <form method="post" action="{% url 'Login' %}" class ="login-container">
+      {% csrf_token %}
+      <p><input type="text" name="userid"placeholder="名前"></p>
+      <p><input type="password" name="password" placeholder="パスワード"></p>
+      <p><input type="submit" class="btn" value="ログイン"></p>
+      </form>
+   </div>
+  
+  
+  
+</body>
+
+</html>
+
+
+
+
+
+

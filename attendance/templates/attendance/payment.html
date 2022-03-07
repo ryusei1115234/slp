@@ -1,0 +1,33 @@
+{% load static %}
+<!doctype html>
+<html lang="ja">
+
+<body>
+    <table>
+        <form action="{% url 'payment' %}" method="post">
+        {% csrf_token %}
+        {{form}}
+        <tr><th></th><td><input type="submit" value="click"><a href="{% url 'create' %}">[ 前の画面に戻る ]</a></td></tr>
+        </form>
+    </table>
+    <hr>
+    <table>
+        <tr>
+            <th>退勤日時</th>
+            <th>名前</th>
+            <th>支払額</th>
+            <th>実働時間</th>
+        
+        </tr>
+    {% for item in payment %}
+        <tr>
+            <td>{{item.regist_date|date:'m/d H:i'}}</td>
+            <td>{{item.name}}:</td>
+            <td>{{item.sum_pay}}円</td>
+            <td>({{item.actual_working_hour}}分)</td>
+            <td> <a href="{% url 'pay_edit' item.id %}">[ 編集 ]</a></td>
+        <tr>
+    {% endfor %}
+    </table>
+</body>
+</html>

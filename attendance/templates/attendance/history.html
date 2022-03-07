@@ -1,0 +1,32 @@
+{% load static %}
+<!doctype html>
+<html lang="ja">
+
+<body>
+    <table>
+        <form action="{% url 'history' %}" method="post">
+        {% csrf_token %}
+        {{form}}
+        <tr><th></th><td><input type="submit" value="click"><a href="{% url 'create' %}">[ 前の画面に戻る ]</a></td></tr>
+        </form>
+    </table>
+    <hr>
+    <table>
+        <tr>
+            <th>時間</th>
+            <th>name</th>
+            <th>ステータス</th>
+            
+        
+        </tr>
+    {% for item in history %}
+        <tr>
+            <td>{{item.regist_date|date:'m/d H:i'}}   </td>
+            <td>{{item.name}}   </td>
+            <td>{{item.status}}    </td>
+            <td> <a href="{% url 'edit' item.id %}">[ 編集 ]</a></td>
+        <tr>
+    {% endfor %}
+    </table>
+</body>
+</html>

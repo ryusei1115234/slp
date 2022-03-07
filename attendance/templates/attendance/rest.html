@@ -1,0 +1,22 @@
+{% load static %}
+<!doctype html>
+<html lang="ja">
+    <head>
+        <link rel="stylesheet"  href="{% static 'attendance/style.css' %}"/>
+     </head>
+
+<body>
+    <div class="start_end">  
+        <h1 class="create-header">{{time| date:'m/d H:i'}}</h1>
+        <form action="{% url 'rest' %}" method="post">
+            {% csrf_token %}
+            <p ><input type="submit" value={{status}}する class="btn btn-primary"></p>  
+        </form>
+        <a href="{% url 'create' %}">[ 戻る ]</a>
+        <a href="/login/">[ ログアウト ]</a>
+            
+       
+    </div>
+</body>
+</html>
+

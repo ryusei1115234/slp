@@ -1,0 +1,17 @@
+{% load static %}
+<!doctype html>
+<html lang="ja">
+    <head>
+        <link rel="stylesheet"  href="{% static 'attendance/style.css' %}"/>
+     </head>
+
+<body>
+    <div class="record">  
+        <h1>{{login_user}}さん{{time| date:'m/d H:i'}}に{{register}}登録しました。</h1>
+        <h1>ログアウトして下さい。</h1>
+        <a href="/login/">ログアウト</a>
+
+    </div>
+    
+</body>
+</html>
